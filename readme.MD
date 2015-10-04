@@ -1,6 +1,6 @@
 // ----------------------------------------------------------------
 // Creator: Mizan & Varadha
-// Email: mizan@faabra.com & admin@kvcodes.com		
+// Email: <a href="mailto:mizan@faabra.com"> Mizan</a> & <a href="mailto:admin@kvcodes.com" > Varadha </a>		
 // Title:   Simple HRM
 // Free software under GNU GPL
 // ----------------------------------------------------------------
@@ -15,4 +15,4 @@ you can get the informations about this module  <a href="http://www.kvcodes.com/
 
 you can feedback your comments below the article or here in issues page. 
 
-https://youtu.be/IKBMxKyT6qA
+[![ScreenShot](https://youtu.be/IKBMxKyT6qA)]
