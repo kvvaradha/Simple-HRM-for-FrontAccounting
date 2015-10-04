@@ -15,4 +15,4 @@ you can get the informations about this module  <a href="http://www.kvcodes.com/
 
 you can feedback your comments below the article or here in issues page. 
 
-[![ScreenShot](https://youtu.be/IKBMxKyT6qA)]
+https://youtu.be/IKBMxKyT6qA
