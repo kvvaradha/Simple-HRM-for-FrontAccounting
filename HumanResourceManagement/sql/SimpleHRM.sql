@@ -1,25 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 4.2.11
--- http://www.phpmyadmin.net
---
--- Host: 127.0.0.1
--- Generation Time: Sep 25, 2015 at 04:58 AM
--- Server version: 5.6.21
--- PHP Version: 5.6.3
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
-
---
--- Database: `fa_keywe`
---
-
 -- --------------------------------------------------------
 
 --
@@ -48,10 +26,9 @@ CREATE TABLE IF NOT EXISTS `0_kv_empl_info` (
 --
 
 INSERT INTO `0_kv_empl_info` (`empl_id`, `empl_name`, `pre_address`, `per_address`, `date_of_birth`, `age`, `mobile_phone`, `email`, `grade`, `department`, `designation`, `gross_salary`, `basic`, `date_of_join`) VALUES
-(1, 'test empl', 'test address', 'summa', '1967-09-22', 23, 32452345, 'summa@summa.com', '', '', '', 8750, 0, '2012-09-05'),
-(2, 'John vsumma', 'test addre', 'adrestwqe\n', '2015-09-02', 23, 567345234, 'John@kvcodes.com', 'Junior', 'HRM', 'Executive', 2000, 0, '2015-09-02'),
-(3, 'John', 'test addre', 'adrestwqe\n', '1984-09-06', 23, 567345234, 'John@kvcodes.com', 'Junior', 'HRM', 'Executive', 3600, 300, '2015-09-02'),
-(4, ' Rudolph', 'sreghs\nergs\ner', 'ghse\nr\nghse\nr', '1977-09-24', 44, 2147483647, 'Summa@kvcodes.com', 'ergse', 'sergser', 'ergserg', 9500, 500, '2014-09-03');
+(3, 'Varadha', 'Karur', 'Karur\n', '1984-02-14', 27, 1234567890, 'admin@kvcodes.com', 'Junior', 'HRM', 'Executive', 3600, 800, '2013-09-02'),
+(4, 'Mizan', 'UK', 'Bangladesh', '1977-09-24', 44, 2147483647, 'mizan@faabra.com', 'B', 'Web development', 'Senior Developer', 18000, 500, '2006-09-06'),
+(5, 'Tamil', '', '', '2015-10-04', 0, 2147483647, 'admin@kvcodes.com', '', '', '', 12500, 1050, '2015-10-04');
 
 -- --------------------------------------------------------
 
@@ -75,7 +52,7 @@ CREATE TABLE IF NOT EXISTS `0_kv_empl_payslip` (
   `total_ded` int(10) NOT NULL,
   `total_net` int(10) NOT NULL,
   `date_of_pay` date NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `0_kv_empl_payslip`
@@ -84,7 +61,7 @@ CREATE TABLE IF NOT EXISTS `0_kv_empl_payslip` (
 INSERT INTO `0_kv_empl_payslip` (`id`, `year`, `month`, `empl_id`, `basic`, `da`, `hra`, `convey_allow`, `edu_other_allow`, `pf`, `lop_amount`, `tds`, `total_ded`, `total_net`, `date_of_pay`) VALUES
 (1, 1, 3, 4, 2850, 1900, 1900, 950, 1900, 570, 1140, 0, 1960, 7540, '2015-09-24'),
 (2, 1, 2, 2, 600, 400, 400, 200, 400, 120, 240, 0, 510, 1490, '2015-09-24'),
-(3, 1, 1, 1, 2625, 1750, 1750, 875, 1750, 525, 1050, 0, 2025, 6725, '2015-09-24');
+(4, 1, 2, 4, 5400, 3600, 3600, 1800, 3600, 1080, 2160, 0, 5590, 12410, '2015-10-04');
 
 --
 -- Indexes for dumped tables
@@ -110,12 +87,12 @@ ALTER TABLE `0_kv_empl_payslip`
 -- AUTO_INCREMENT for table `0_kv_empl_info`
 --
 ALTER TABLE `0_kv_empl_info`
-MODIFY `empl_id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+MODIFY `empl_id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `0_kv_empl_payslip`
 --
 ALTER TABLE `0_kv_empl_payslip`
-MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

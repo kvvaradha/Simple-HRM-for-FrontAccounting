@@ -33,7 +33,7 @@ class hooks_HumanResourceManagement extends hooks {
         global $db_connections;
 
         $updates = array(
-            'kv_empl.sql' => array('dashboard_widgets')
+            'SimpleHRM.sql' => array('SimpleHRM')
         );
 
         return $this->update_databases($company, $updates, $check_only);

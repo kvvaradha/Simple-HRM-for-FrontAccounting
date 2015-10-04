@@ -74,6 +74,8 @@ function delete_employee($empl_id){
 	$sql="DELETE FROM ".TB_PREF."kv_empl_info WHERE empl_id=".db_escape($empl_id);
 	db_query($sql, "could not delete the selected Employee");
 	
+	$sql="DELETE FROM ".TB_PREF."kv_empl_payslip WHERE empl_id=".db_escape($empl_id);
+	db_query($sql, "could not delete the selected Employee");
 }
 
 function employee_list($name, $selected_id=null, $all_option=false, $submit_on_change=false, $show_inactive=false, $editkey = false){
@@ -205,6 +207,11 @@ function db_has_employee_payslip($year, $month, $empl_id){
 	return check_empty_result("SELECT COUNT(*) FROM ".TB_PREF."kv_empl_payslip WHERE year=".$year." AND month=".$month." AND empl_id=".$empl_id);
 }
 
+function db_has_payslip(){
+	return check_empty_result("SELECT COUNT(*) FROM ".TB_PREF."kv_empl_payslip");
+}
+
+
 function get_current_payslip($year, $month, $empl_id){
 	$result=  db_query("SELECT * FROM ".TB_PREF."kv_empl_payslip WHERE year=".$year." AND month=".$month." AND empl_id=".$empl_id, " Can't get your data");
 	return db_fetch($result);
@@ -227,4 +234,19 @@ function kv_get_empl_grosspay($id) {
 	$row = db_fetch_row($result);
 	return $row[0];
 }
+function kv_get_empl_name($id) {
+	$sql = "SELECT empl_name FROM ".TB_PREF."kv_empl_info WHERE empl_id=".db_escape($id)."LIMIT 1";
+
+	$result = db_query($sql, "could not get sales type");
+
+	$row = db_fetch_row($result);
+	return $row[0];
+}
+
+function kv_truncate_my_tables(){
+	$sql_first =" TRUNCATE TABLE ".TB_PREF."kv_empl_info" ;
+	$sql_second =" TRUNCATE TABLE ".TB_PREF."kv_empl_payslip" ;
+	$result = db_query($sql_first, "could not clean it");
+	$result = db_query($sql_second, "could not clean it");
+} 
 ?>

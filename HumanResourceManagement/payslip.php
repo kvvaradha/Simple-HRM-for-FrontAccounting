@@ -1,6 +1,6 @@
 <?php 
 // ----------------------------------------------------------------
-// Creator: Mizan(& Kvvaradha
+// Creator: Mizan & Kvvaradha
 // email:   admin@kvcodes.com
 // Title:   Tutorial Hook For HRM
 // ----------------------------------------------------------------
@@ -67,9 +67,10 @@ if (db_has_employees()) {
 	end_row();
 	end_table();
 
-	if (get_post('_show_inactive_update')) {
+	if (get_post('_selected_id_sel_update')) {
 		$Ajax->activate('selected_id');
 		set_focus('selected_id');
+		display_error("sergsergser");
 	}
 }
 else{
