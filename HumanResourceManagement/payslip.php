@@ -1,6 +1,6 @@
 <?php 
 // ----------------------------------------------------------------
-// Creator: Mizan & Kvvaradha
+// Creator: Mizan(& Kvvaradha
 // email:   admin@kvcodes.com
 // Title:   Tutorial Hook For HRM
 // ----------------------------------------------------------------
@@ -67,10 +67,9 @@ if (db_has_employees()) {
 	end_row();
 	end_table();
 
-	if (get_post('_selected_id_sel_update')) {
+	if (get_post('_show_inactive_update')) {
 		$Ajax->activate('selected_id');
 		set_focus('selected_id');
-		display_error("sergsergser");
 	}
 }
 else{
@@ -171,15 +170,16 @@ if (isset($selected_id) && $selected_id != '' ) {
 	label_row(_(" Conveyance:"), $convey_allow, null, 30, 30);
 	label_row(_(" Education/ Other Allowance:"), $edu_other_allow, null, 30, 30);
 	table_section_title(_(""));
-	label_row(_(" Gross Earning"), $gross, null, 30, 30);
+	label_row(_(" Gross Earning"), $gross, 'style="color:#A86A0B; background-color:#F2F6D5;"','style="color:#A86A0B; background-color:#F2F6D5;"');
 	table_section(2);
 	table_section_title(_("Deduction"));
 	label_row(_(" Provident Fund:"), $pf, null, 30, 30);
 	label_row(_(" LOP Amount:"), $lop_amount, null, 30, 30);		
+	label_row(_(" Monthly Amount:"), $staff_loan, null, 30, 30);		
 	label_row(_(" Other Deduction:"), $tds, null, 30, 30);		
-	label_row(_(" Total Deductions"), $total_ded, null, 30, 30);
+	label_row(_(" Total Deductions"), $total_ded, 'style="color:#f55; background-color:#fed;"', 'style="color:#f55; background-color:#fed;"');
 	label_row(_(" "), '', null, 30, 30);
-	label_row(_(" Net Salary Payable:"), $total_net, null, 30, 30);
+	label_row(_(" Net Salary Payable:"), $total_net, 'style="color:#107B0F; background-color:#B7DBC1;"', 'style="color:#107B0F; background-color:#B7DBC1;"');
 	
 	end_outer_table(1);
 	if(!db_has_employee_payslip($_POST['year'],$_POST['month'], $_POST['empl_id'] )) {
