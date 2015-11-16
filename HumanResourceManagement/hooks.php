@@ -4,7 +4,7 @@
 // email:   admin@kvcodes.com
 // Title:   Tutorial Hook For HRM
 // ----------------------------------------------------------------
-define ('SS_HRM', 250<<8);
+define ('SS_SIMPLEHRM', 250<<8);
 include_once($path_to_root . "/modules/HumanResourceManagement/HumanResourceManagement.php");
 
 class hooks_HumanResourceManagement extends hooks {
@@ -19,10 +19,10 @@ class hooks_HumanResourceManagement extends hooks {
   
     function install_access()
 	{
-        $security_sections[SS_HRM] =  _("HRM");
+        $security_sections[SS_SIMPLEHRM] =  _("HRM");
 
-        $security_areas['SA_HRMSETUP'] = array(SS_HRM|1, _("HRM Setup"));
-        $security_areas['SA_EMPLOYEE'] = array(SS_HRM|2, _("Employee"));
+        $security_areas['SA_HRMSETUP'] = array(SS_SIMPLEHRM|1, _("HRM Setup"));
+        $security_areas['SA_EMPLOYEE'] = array(SS_SIMPLEHRM|2, _("Employee"));
 
 		return array($security_areas, $security_sections);
 	}
