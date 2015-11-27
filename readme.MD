@@ -31,7 +31,7 @@ if you want to integrate this module with your current FA. You can integrate thi
 here find this code. 
     include_once($path_to_root . '/applications/setup.php');
 and add the follwoing line below of it. 
-    include_once($path_to_root . '/HumanResourceManagement/setup.php');
+    include_once($path_to_root . '/HumanResourceManagement/HumanResourceManagement.php');
 
 3. Now, open the FA/HumanResourceManagement/includes/SimpleHRM.sql.  just import this table inside your FA.  You have to check the table prefix before importing it.   its like "0_"  . so check whether your database table prefix matches with it or not. and than import it. 
 
