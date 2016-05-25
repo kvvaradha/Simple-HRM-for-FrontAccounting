@@ -249,4 +249,21 @@ function kv_truncate_my_tables(){
 	$result = db_query($sql_first, "could not clean it");
 	$result = db_query($sql_second, "could not clean it");
 } 
+
+function  kv_get_next_trans_no($type_id){
+	$sql = "SELECT type_no FROM ".TB_PREF."sys_types WHERE type_id=".db_escape($type_id)."LIMIT 1";
+
+	$result = db_query($sql, "could not get sales type");
+
+	$row = db_fetch_row($result);
+	return $row[0];
+}
+
+function kv_save_next_trans_no($type_no){
+	$sql = "UPDATE ".TB_PREF."sys_types SET
+		type_no=".db_escape($type_no)." WHERE type_id=99 LIMIT 1";
+
+	return db_query($sql, "could not get sales type");
+}
+
 ?>

@@ -10,9 +10,8 @@ include_once($path_to_root . "/includes/session.inc");
 include_once($path_to_root . "/includes/ui.inc");
 include_once($path_to_root . "/modules/HumanResourceManagement/includes/employee_db.inc");
 
-$js = '';
-if ($use_date_picker)
-    $js .= get_js_date_picker();
+
+    $js = get_js_date_picker();
 page(_($help_context = "Employee"), false, false, "", $js);
 
 	if(isset($_GET['Updated'])) {	
