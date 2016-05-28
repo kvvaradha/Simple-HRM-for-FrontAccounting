@@ -1,40 +1,22 @@
-// ----------------------------------------------------------------
-// Creator: Mizan & Varadha
-// Email: <a href="mailto:mizan@faabra.com"> Mizan</a> & <a href="mailto:admin@kvcodes.com" > Varadha </a>	
-// Title:   Simple HRM
-// Free software under GNU GPL
-// ----------------------------------------------------------------
+FrontAccounting ERP
+===================
 
+FrontAccounting ERP is open source, web-based accounting software for small and medium enterprises.
+It supports double entry accounting providing both low level journal entry and user friendly, document based 
+interface for everyday business activity with automatic GL postings generation. This is multicurrency,
+multilanguage system with active worldwide users community:
 
-Introduction:
----------
+Project web site http://frontaccounting.com
 
-Simple HRM is a simple module for the users, who needs a simple one to maintain their employee details and their pay details. 
+SourceForge project page: http://sourceforge.net/projects/frontaccounting/
 
-you can get the informations about this module  <a href="http://www.kvcodes.com/2014/10/frontaccounting-simple-hrm/" target="_blank"> Here.  </a>.
+Central users forum: http://frontaccounting.com/punbb/index.php
 
-you can feedback your comments below the article or here in issues page. 
+Main code repository: http://git.code.sf.net/p/frontaccounting/git
 
-https://youtu.be/IKBMxKyT6qA
+GitHub mirror: http://github.com/FrontAccountingERP/FA
 
-if you want to integrate this module with your current FA. You can integrate this extension inside your FrontAccounting(FA)  by doing the following steps
+Mantis bugtracker: http://mantis.frontaccounting.com
 
-1. copy those HumanResourceManagement to root of your FA.  and open the hooks.php  copy the following code and open the Root of FA/includes/ access_level.inc"  and add it there. 
+FrontAccounting is available under GPL v.3 license.
 
- $security_sections[SS_HRM] =  _("HRM");
-
-        $security_areas['SA_HRMSETUP'] = array(SS_HRM|1, _("HRM Setup"));
-        $security_areas['SA_EMPLOYEE'] = array(SS_HRM|2, _("Employee"));
-
-2. now, open the frontaccounting.php which is there in the root of FA/frontaccounting.php
-
-here find this code. 
-    include_once($path_to_root . '/applications/setup.php');
-and add the follwoing line below of it. 
-    include_once($path_to_root . '/HumanResourceManagement/HumanResourceManagement.php');
-
-3. Now, open the FA/HumanResourceManagement/includes/SimpleHRM.sql.  just import this table inside your FA.  You have to check the table prefix before importing it.   its like "0_"  . so check whether your database table prefix matches with it or not. and than import it. 
-
-4. Now, login into your front accounting. you can see a new menu in it. and move to Setup->access Setup -> here select your user role, than check all the hrm checkboxes which is there in the bottom of the user roles table. 
-
-now, logout and login again, you can get access. 
