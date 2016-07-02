@@ -13,7 +13,7 @@ you can get the informations about this module  <a href="http://www.kvcodes.com/
 
 you can feedback your comments below the article or here in issues page. 
 
-https://youtu.be/IKBMxKyT6qA
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/IKBMxKyT6qA/0.jpg)](https://www.youtube.com/watch?v=IKBMxKyT6qA)
 
 if you want to integrate this module with your current FA. You can integrate this extension inside your FrontAccounting(FA)  by doing the following steps
 
