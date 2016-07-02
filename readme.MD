@@ -1,6 +1,6 @@
-![Nova Framework](http://novaframework.com/app/templates/publicthemes/nova/images/nova.png)
+![Simple HRM](http://www.kvcodes.com/wp-content/uploads/2014/10/simple-HRM-188x300.png)
 
-# Nova Framework v3.0
+# Simple HRM Frontaccounting
 
 [![Total Downloads](https://img.shields.io/packagist/dt/nova-framework/framework.svg)](https://packagist.org/packages/nova-framework/framework)
 [![Dependency Status](https://www.versioneye.com/user/projects/554367f738331321e2000005/badge.svg)](https://www.versioneye.com/user/projects/554367f738331321e2000005)
