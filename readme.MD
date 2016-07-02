@@ -1,9 +1,12 @@
-// ----------------------------------------------------------------
-// Creator: Mizan & Varadha
-// Email: <a href="mailto:mizan@faabra.com"> Mizan</a> & <a href="mailto:admin@kvcodes.com" > Varadha </a>	
-// Title:   Simple HRM
-// Free software under GNU GPL
-// ----------------------------------------------------------------
+![Nova Framework](http://novaframework.com/app/templates/publicthemes/nova/images/nova.png)
+
+# Nova Framework v3.0
+
+[![Total Downloads](https://img.shields.io/packagist/dt/nova-framework/framework.svg)](https://packagist.org/packages/nova-framework/framework)
+[![Dependency Status](https://www.versioneye.com/user/projects/554367f738331321e2000005/badge.svg)](https://www.versioneye.com/user/projects/554367f738331321e2000005)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/nova-framework/framework/blob/master/LICENSE.txt)
+[![GitHub stars](https://img.shields.io/github/stars/nova-framework/framework.svg)](https://github.com/nova-framework/framework/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/nova-framework/framework.svg)](https://github.com/nova-framework/framework/network)
 
 
 Introduction:
