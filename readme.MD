@@ -36,3 +36,8 @@ and add the follwoing line below of it.
 4. Now, login into your front accounting. you can see a new menu in it. and move to Setup->access Setup -> here select your user role, than check all the hrm checkboxes which is there in the bottom of the user roles table. 
 
 now, logout and login again, you can get access. 
+
+Update 2.4.1:
+---------
+
+Please take a look at my blog for more.
