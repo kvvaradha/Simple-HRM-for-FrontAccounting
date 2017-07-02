@@ -2,14 +2,14 @@
 
 # Simple HRM Frontaccounting
 
-I have few HRM Versions. Check it <a href="http://www.kvcodes.com/" > Here.</a> 
+I have few HRM Versions. Check it <a href="http://www.kvcodes.com/module/simple-hrm-frontaccounting/" > Here.</a> 
 
 Introduction:
 ---------
 
 Simple HRM is a simple module for the users, who needs a simple one to maintain their employee details and their pay details. 
 
-you can get the informations about this module  <a href="http://www.kvcodes.com/2014/10/frontaccounting-simple-hrm/" target="_blank"> Here.  </a>.
+you can get the informations about this module  <a href="http://www.kvcodes.com/2014/10/frontaccounting-simple-hrm/" target="_blank"> Here.  </a> And <a href="http://www.kvcodes.com/module/simple-hrm-frontaccounting/" > Here </a>.
 
 you can feedback your comments below the article or here in issues page. 
 
