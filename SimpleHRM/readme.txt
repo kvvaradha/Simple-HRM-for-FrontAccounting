@@ -13,19 +13,19 @@ https://youtu.be/IKBMxKyT6qA
 
 
 INSTALLATION:
-Download and extract the HumanResourceManagement folder on your modules directory , than follow this steps
+Download and extract the SimpleHRM folder on your modules directory , than follow this steps
 
 1. FrontAccounting -> Setup -> Install/Activate Extensions
 
-   Click on the icon in the right column corresponding to HumanResourceManagement
+   Click on the icon in the right column corresponding to SimpleHRM
 
    Extensions drop down box -> Activated for (name of your business)
 
-   Click on "active" box for HumanResourceManagement -> Update
+   Click on "active" box for SimpleHRM -> Update
 
 2. FrontAccounting -> Setup -> Access Setup
 
-   Select appropriate role click on HumanResourceManagement header and entry -> Save Role
+   Select appropriate role click on SimpleHRM header and entry -> Save Role
 
    Logout and log back in
 

@@ -8,7 +8,7 @@ $page_security = 'SA_OPEN';
 $path_to_root="../..";
 include_once($path_to_root . "/includes/session.inc");
 include_once($path_to_root . "/includes/ui.inc");
-include_once($path_to_root . "/modules/HumanResourceManagement/includes/employee_db.inc");
+include_once($path_to_root . "/modules/SimpleHRM/includes/employee_db.inc");
 
 page(_($help_context = "Pay History"), false, false);
 

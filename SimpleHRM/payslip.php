@@ -9,7 +9,7 @@ $path_to_root="../..";
 include_once($path_to_root . "/includes/session.inc");
 include_once($path_to_root . "/includes/ui.inc");
 include_once($path_to_root . "/gl/includes/db/gl_db_trans.inc");
-include_once($path_to_root . "/modules/HumanResourceManagement/includes/employee_db.inc");
+include_once($path_to_root . "/modules/SimpleHRM/includes/employee_db.inc");
 
 
     $js = get_js_date_picker();
@@ -184,23 +184,13 @@ if (isset($selected_id) && $selected_id != '' ) {
 	if(!db_has_employee_payslip($_POST['year'],$_POST['month'], $_POST['empl_id'] )) {
 		start_table(TABLESTYLE2); 
 		echo '<tr>' ;
-		$from = Today();
-		$from = add_days($from,1);
-		$bal =  get_balance_before_for_bank_account(1, $from);
-		//echo $trans_no = kv_get_next_trans_no(99) + 1;
-		if($total_net <= $bal)
-			submit_cells('pay_salary', _("Process Payout"),'',_('Show Results'), 'default');
-		else
-			display_warning(" Your Current Account Balance is lower than the payout!.");
+		submit_cells('pay_salary', _("Process Payout"),'',_('Show Results'), 'default');
 		echo '</tr>'; 
 		end_table(); 
 	} else { 
 		display_warning(" Paid Already!.");
 	} 
 	div_end();	
-
-	 
-
 }
 end_form();
 
@@ -212,18 +202,11 @@ end_form();
 	
 }
 if(get_post('pay_salary')) {
-	global $Refs;
-
+	
 	$pay_slip_id = add_payslip($_POST['year'],$_POST['month'], $_POST['empl_id'], $_POST['basic'], $_POST['da'], $_POST['hra'], $_POST['convey_allow'], $_POST['edu_other_allow'], $_POST['pf'], $_POST['lop_amount'], $_POST['tds'], $_POST['total_ded'], $_POST['total_net'], $_POST['date_of_pay']); 
 	add_gl_trans(99, $pay_slip_id, $_POST['date_of_pay'], 5410, 0,0, 'employee Salary #'.$_POST['empl_id'], $_POST['total_net']);
 	add_gl_trans(99, $pay_slip_id, $_POST['date_of_pay'], 1060, 0,0, 'employee Salary #'.$_POST['empl_id'], -$_POST['total_net']);
-	$trans_no = kv_get_next_trans_no(99) + 1;
-	$ref = get_next_reference(99);
-	$total_net_pay = -$_POST['total_net'];
-	add_bank_trans(99, $trans_no, 1, $ref, $_POST['date_of_pay'], $total_net_pay, 99, $_POST['empl_id']);
-	$Refs->save(99, $trans_no, $ref);
-	kv_save_next_trans_no($trans_no); 
-	display_notification(' The Employee Payslip is added #' .$pay_slip_id );
+	display_notification(' The Employee Payslip is added #' .$pay_slip_id);
 }
 
 end_page();

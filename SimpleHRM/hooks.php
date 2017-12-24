@@ -5,16 +5,16 @@
 // Title:   Tutorial Hook For HRM
 // ----------------------------------------------------------------
 define ('SS_SIMPLEHRM', 250<<8);
-include_once($path_to_root . "/modules/HumanResourceManagement/HumanResourceManagement.php");
+include_once($path_to_root . "/modules/SimpleHRM/SimpleHRM.php");
 
-class hooks_HumanResourceManagement extends hooks {
-	var $module_name = 'HumanResourceManagement';
+class hooks_SimpleHRM extends hooks {
+	var $module_name = 'SimpleHRM';
 
 	/*
 		Install additonal menu options provided by module
 	*/
     function install_tabs($app) {
-        $app->add_application(new HumanResourceManagement_app);
+        $app->add_application(new SimpleHRM_app);
     }
   
     function install_access()
