@@ -39,5 +39,9 @@ now, logout and login again, you can get access.
 
 Update 2.4.1:
 ---------
+Read it from my blog <a href="http://www.kvcodes.com/module/simple-hrm-frontaccounting/" > Simple HRM for FA - Kvcodes </a>
+
+Update 2.4.1:
+---------
 
 Please take a look at my blog for more.
