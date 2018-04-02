@@ -7,8 +7,8 @@
 
 class SimpleHRM_app extends application{
     var $apps;
-	function SimpleHRM_app()	{
-		$this->application("HRM", _($this->help_context = "&HRM"));
+	function __construct()	{
+		parent::__construct("HRM", _($this->help_context = "&HRM"));
 		$this->add_module(_("Transactions"));
 		$this->add_lapp_function(0, _('Employee Profile'), 'modules/SimpleHRM/employee.php', 'SA_EMPLOYEE', MENU_TRANSACTION);
 		$this->add_lapp_function(0, _('About Me'), 'modules/SimpleHRM/about-me.php', 'SA_EMPLOYEE', MENU_TRANSACTION);
